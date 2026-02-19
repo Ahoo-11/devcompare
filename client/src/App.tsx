@@ -5,12 +5,20 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import ComparisonPage from "./pages/ComparisonPage";
+import ToolDetailsPage from "./pages/ToolDetailsPage";
+import AlternativesPage from "./pages/AlternativesPage";
+import CategoryPage from "./pages/CategoryPage";
 
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/compare/:toolA-vs-:toolB"} component={ComparisonPage} />
+      <Route path={"/tools/:toolName"} component={ToolDetailsPage} />
+      <Route path={"/alternatives/:toolName"} component={AlternativesPage} />
+      <Route path={"/category/:categoryName"} component={CategoryPage} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
