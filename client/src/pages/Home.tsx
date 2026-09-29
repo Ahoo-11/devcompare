@@ -37,7 +37,7 @@ export default function Home() {
             Compare Developer Tools & SaaS Products
           </h2>
           <p className="text-lg text-slate-600 mb-8">
-            Make informed decisions with detailed comparisons, feature matrices, and expert insights
+            Explore starter comparisons, feature lists, and product links in one place
           </p>
 
           {/* Search Bar */}
@@ -69,7 +69,7 @@ export default function Home() {
 
         {/* Featured Comparisons */}
         <div className="mt-16">
-          <h3 className="text-2xl font-bold text-slate-900 mb-8">Popular Comparisons</h3>
+          <h3 className="text-2xl font-bold text-slate-900 mb-8">Featured Comparisons</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link href="/compare/react-vs-vue">
               <Card className="p-6 hover:shadow-lg hover:border-blue-400 transition cursor-pointer">
@@ -142,9 +142,12 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-slate-900 text-slate-300 py-12">
         <div className="container text-center">
-          <p className="mb-2">DevCompare © 2025</p>
+          <p className="mb-2">DevCompare</p>
           <p className="text-sm text-slate-400">
             Helping developers make informed decisions about tools and technologies
+          </p>
+          <p className="text-xs text-slate-500 mt-3">
+            Starter catalog only. Features and pricing may change; confirm current details with each vendor.
           </p>
         </div>
       </footer>

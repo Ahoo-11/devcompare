@@ -77,20 +77,6 @@ export default function ToolDetailsPage() {
             <span className="text-sm font-semibold text-slate-500">CATEGORY</span>
             <p className="text-lg font-semibold text-slate-900 mt-2">{tool.category}</p>
           </Card>
-          {tool.users && (
-            <Card className="p-6">
-              <span className="text-sm font-semibold text-slate-500">USERS</span>
-              <p className="text-lg font-semibold text-slate-900 mt-2">
-                {(tool.users / 1000000).toFixed(1)}M+
-              </p>
-            </Card>
-          )}
-          {tool.rating && (
-            <Card className="p-6">
-              <span className="text-sm font-semibold text-slate-500">RATING</span>
-              <p className="text-lg font-semibold text-slate-900 mt-2">{tool.rating}/5.0</p>
-            </Card>
-          )}
         </div>
 
         {/* Main Content */}

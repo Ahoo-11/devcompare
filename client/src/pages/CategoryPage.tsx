@@ -72,20 +72,6 @@ export default function CategoryPage() {
                     <span className="text-sm text-slate-500">Pricing:</span>
                     <span className="font-semibold text-slate-900 text-sm">{tool.pricing}</span>
                   </div>
-                  {tool.users && (
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-slate-500">Users:</span>
-                      <span className="font-semibold text-slate-900 text-sm">
-                        {(tool.users / 1000000).toFixed(1)}M+
-                      </span>
-                    </div>
-                  )}
-                  {tool.rating && (
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-slate-500">Rating:</span>
-                      <span className="font-semibold text-slate-900 text-sm">{tool.rating}/5.0</span>
-                    </div>
-                  )}
                 </div>
 
                 <Button variant="outline" className="w-full">

@@ -72,12 +72,6 @@ export default function AlternativesPage() {
                     <span className="text-sm text-slate-500">Pricing:</span>
                     <span className="font-semibold text-slate-900">{alt.pricing}</span>
                   </div>
-                  {alt.rating && (
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-slate-500">Rating:</span>
-                      <span className="font-semibold text-slate-900">{alt.rating}/5.0</span>
-                    </div>
-                  )}
                 </div>
 
                 <Button variant="outline" className="w-full">

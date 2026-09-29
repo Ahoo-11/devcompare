@@ -11,8 +11,6 @@ export interface Tool {
   pros: string[];
   cons: string[];
   bestFor: string;
-  users?: number;
-  rating?: number;
   yearFounded?: number;
 }
 
@@ -29,8 +27,6 @@ export const tools: Tool[] = [
     pros: ["Lightweight", "Highly customizable", "Massive extension market", "Free", "Cross-platform"],
     cons: ["Can be slow with many extensions", "Requires configuration for some languages"],
     bestFor: "General-purpose development, web development, quick scripting",
-    users: 15000000,
-    rating: 4.8,
     yearFounded: 2015,
   },
   {
@@ -45,8 +41,6 @@ export const tools: Tool[] = [
     pros: ["Excellent Java support", "Smart refactoring", "Built-in tools", "Community edition free"],
     cons: ["Heavy resource usage", "Steep learning curve", "Paid license expensive"],
     bestFor: "Enterprise Java development, large projects",
-    users: 5000000,
-    rating: 4.7,
     yearFounded: 2000,
   },
   {
@@ -61,8 +55,6 @@ export const tools: Tool[] = [
     pros: ["Very fast", "Minimal interface", "Powerful search", "One-time purchase"],
     cons: ["Limited built-in features", "Smaller community than VS Code", "Paid license"],
     bestFor: "Fast editing, minimalist workflow, experienced developers",
-    users: 2000000,
-    rating: 4.5,
     yearFounded: 2008,
   },
   {
@@ -77,8 +69,6 @@ export const tools: Tool[] = [
     pros: ["Largest developer community", "Excellent UI", "GitHub Actions CI/CD", "Free for public repos"],
     cons: ["Owned by Microsoft", "Limited on free tier", "Can be pricey at scale"],
     bestFor: "Open source projects, team collaboration, public repositories",
-    users: 100000000,
-    rating: 4.9,
     yearFounded: 2008,
   },
   {
@@ -93,8 +83,6 @@ export const tools: Tool[] = [
     pros: ["All-in-one platform", "Strong CI/CD", "Self-hosted option", "Good for enterprises"],
     cons: ["Steeper learning curve", "UI less intuitive than GitHub", "Smaller community"],
     bestFor: "Enterprise deployments, complex CI/CD pipelines, self-hosted solutions",
-    users: 30000000,
-    rating: 4.6,
     yearFounded: 2011,
   },
   {
@@ -109,8 +97,6 @@ export const tools: Tool[] = [
     pros: ["Jira integration", "Good for teams", "Mercurial support", "Free tier generous"],
     cons: ["Smaller community than GitHub", "Less popular for open source", "UI can be confusing"],
     bestFor: "Teams using Jira, Atlassian ecosystem, enterprise projects",
-    users: 10000000,
-    rating: 4.3,
     yearFounded: 2008,
   },
   {
@@ -125,8 +111,6 @@ export const tools: Tool[] = [
     pros: ["Industry standard", "Excellent documentation", "Large ecosystem", "Easy to learn"],
     cons: ["Resource intensive", "Learning curve for beginners", "Licensing complexity"],
     bestFor: "Microservices, deployment consistency, development environments",
-    users: 50000000,
-    rating: 4.8,
     yearFounded: 2013,
   },
   {
@@ -141,8 +125,6 @@ export const tools: Tool[] = [
     pros: ["Industry standard", "Highly scalable", "Large community", "Open source"],
     cons: ["Steep learning curve", "Complex to set up", "Resource intensive", "Overkill for small projects"],
     bestFor: "Large-scale deployments, microservices, cloud-native applications",
-    users: 10000000,
-    rating: 4.7,
     yearFounded: 2014,
   },
   {
@@ -157,8 +139,6 @@ export const tools: Tool[] = [
     pros: ["Largest package ecosystem", "Easy to use", "Built into Node.js", "Good security features"],
     cons: ["Dependency bloat", "Slow installs sometimes", "Quality varies across packages"],
     bestFor: "JavaScript/Node.js projects, web development",
-    users: 20000000,
-    rating: 4.6,
     yearFounded: 2010,
   },
   {
@@ -173,8 +153,6 @@ export const tools: Tool[] = [
     pros: ["Fast and reliable", "Better dependency resolution", "Offline support", "Workspaces for monorepos"],
     cons: ["Smaller ecosystem than npm", "Steeper learning curve", "Less documentation"],
     bestFor: "Large monorepos, teams needing fast installs, JavaScript projects",
-    users: 5000000,
-    rating: 4.7,
     yearFounded: 2016,
   },
   {
@@ -189,8 +167,6 @@ export const tools: Tool[] = [
     pros: ["Fastest install times", "Disk space efficient", "Strict dependency management", "Great for monorepos"],
     cons: ["Newer, smaller community", "Less documentation", "Some package compatibility issues"],
     bestFor: "Monorepos, performance-critical projects, disk-space limited environments",
-    users: 2000000,
-    rating: 4.8,
     yearFounded: 2016,
   },
   {
@@ -205,8 +181,6 @@ export const tools: Tool[] = [
     pros: ["Largest community", "Excellent documentation", "Flexible", "Great tooling"],
     cons: ["Steep learning curve", "JSX can be confusing", "Requires additional libraries"],
     bestFor: "Single-page applications, complex UIs, large teams",
-    users: 15000000,
-    rating: 4.9,
     yearFounded: 2013,
   },
   {
@@ -221,8 +195,6 @@ export const tools: Tool[] = [
     pros: ["Easy to learn", "Excellent documentation", "Flexible", "Great developer experience"],
     cons: ["Smaller community than React", "Fewer job opportunities", "Fewer third-party libraries"],
     bestFor: "Rapid development, small to medium projects, developer happiness",
-    users: 5000000,
-    rating: 4.8,
     yearFounded: 2014,
   },
   {
@@ -237,8 +209,6 @@ export const tools: Tool[] = [
     pros: ["Full-featured", "Strong TypeScript support", "Great for large projects", "Enterprise-ready"],
     cons: ["Steep learning curve", "Verbose", "Overkill for small projects", "Smaller community than React"],
     bestFor: "Large enterprise applications, TypeScript projects, complex requirements",
-    users: 3000000,
-    rating: 4.5,
     yearFounded: 2010,
   },
   {
@@ -253,8 +223,6 @@ export const tools: Tool[] = [
     pros: ["Smallest bundle sizes", "Excellent performance", "Easy to learn", "Less boilerplate"],
     cons: ["Smaller ecosystem", "Fewer job opportunities", "Less mature than React/Vue"],
     bestFor: "Performance-critical applications, small teams, learning frontend development",
-    users: 1000000,
-    rating: 4.8,
     yearFounded: 2016,
   },
   {
@@ -269,8 +237,6 @@ export const tools: Tool[] = [
     pros: ["Great developer experience", "Excellent performance", "Full-stack capabilities", "Easy deployment"],
     cons: ["Requires Node.js", "Steeper learning curve", "Vendor lock-in with Vercel"],
     bestFor: "Full-stack applications, SEO-critical sites, rapid development",
-    users: 5000000,
-    rating: 4.9,
     yearFounded: 2016,
   },
   {
@@ -285,8 +251,6 @@ export const tools: Tool[] = [
     pros: ["Easy to learn", "Great developer experience", "Vue ecosystem", "Good documentation"],
     cons: ["Smaller community than Next.js", "Fewer job opportunities", "Less mature ecosystem"],
     bestFor: "Vue-based full-stack applications, SEO-critical sites, rapid development",
-    users: 1000000,
-    rating: 4.7,
     yearFounded: 2016,
   },
   {
@@ -301,8 +265,6 @@ export const tools: Tool[] = [
     pros: ["Fastest performance", "Less JavaScript", "Framework agnostic", "Great for content sites"],
     cons: ["Newer, smaller community", "Less documentation", "Limited dynamic capabilities"],
     bestFor: "Content-heavy sites, blogs, documentation, performance-critical applications",
-    users: 500000,
-    rating: 4.8,
     yearFounded: 2021,
   },
   {
@@ -317,8 +279,6 @@ export const tools: Tool[] = [
     pros: ["Easy to learn", "Huge ecosystem", "Great for data science", "Versatile"],
     cons: ["Slower than compiled languages", "GIL limitations", "Mobile development limited"],
     bestFor: "Data science, machine learning, web development, automation, scripting",
-    users: 50000000,
-    rating: 4.9,
     yearFounded: 1991,
   },
   {
@@ -333,8 +293,6 @@ export const tools: Tool[] = [
     pros: ["Better IDE support", "Catches errors early", "Excellent documentation", "Growing adoption"],
     cons: ["Compilation step", "Learning curve", "Slower development initially", "Setup complexity"],
     bestFor: "Large projects, teams, type-safe development, modern JavaScript",
-    users: 20000000,
-    rating: 4.8,
     yearFounded: 2012,
   },
   {
@@ -349,8 +307,6 @@ export const tools: Tool[] = [
     pros: ["Memory safe", "Fast", "Great error messages", "Growing ecosystem"],
     cons: ["Steep learning curve", "Slower compilation", "Smaller ecosystem than C++", "Niche use cases"],
     bestFor: "Systems programming, performance-critical code, WebAssembly, CLI tools",
-    users: 3000000,
-    rating: 4.8,
     yearFounded: 2010,
   },
   {
@@ -365,8 +321,6 @@ export const tools: Tool[] = [
     pros: ["Simple syntax", "Fast compilation", "Great concurrency", "Easy deployment"],
     cons: ["Minimal standard library", "No generics (until 1.18)", "Smaller ecosystem", "Less suitable for complex UIs"],
     bestFor: "Backend services, DevOps tools, microservices, CLI applications",
-    users: 5000000,
-    rating: 4.7,
     yearFounded: 2009,
   },
   {
@@ -381,8 +335,6 @@ export const tools: Tool[] = [
     pros: ["Powerful features", "Reliable", "Great community", "Excellent documentation"],
     cons: ["Steeper learning curve", "More complex setup", "Slower than specialized databases for specific tasks"],
     bestFor: "Complex queries, relational data, enterprise applications, data warehouses",
-    users: 10000000,
-    rating: 4.9,
     yearFounded: 1996,
   },
   {
@@ -397,8 +349,6 @@ export const tools: Tool[] = [
     pros: ["Flexible schema", "Easy to scale", "Developer-friendly", "Good for rapid development"],
     cons: ["Higher memory usage", "Less mature transactions", "Can lead to data inconsistency", "Licensing concerns"],
     bestFor: "Rapid prototyping, flexible data models, scalable applications, content management",
-    users: 5000000,
-    rating: 4.6,
     yearFounded: 2009,
   },
   {
@@ -413,8 +363,6 @@ export const tools: Tool[] = [
     pros: ["Extremely fast", "Simple to use", "Great for caching", "Excellent for real-time"],
     cons: ["Limited to available RAM", "Single-threaded", "Data loss on restart (without persistence)"],
     bestFor: "Caching, sessions, real-time features, message queues, leaderboards",
-    users: 5000000,
-    rating: 4.8,
     yearFounded: 2009,
   },
   {
@@ -429,8 +377,6 @@ export const tools: Tool[] = [
     pros: ["Precise data fetching", "Great developer experience", "Self-documenting", "Excellent tooling"],
     cons: ["Learning curve", "Caching complexity", "Overkill for simple APIs", "Query complexity attacks"],
     bestFor: "Complex data requirements, mobile applications, rapid frontend development",
-    users: 3000000,
-    rating: 4.7,
     yearFounded: 2015,
   },
   {
@@ -445,8 +391,6 @@ export const tools: Tool[] = [
     pros: ["Simple to understand", "Standard HTTP methods", "Great caching", "Widely adopted"],
     cons: ["Over-fetching/under-fetching", "Multiple requests needed", "Versioning challenges"],
     bestFor: "Simple to moderate APIs, public APIs, traditional web services",
-    users: 50000000,
-    rating: 4.7,
     yearFounded: 2000,
   },
   {
@@ -461,8 +405,6 @@ export const tools: Tool[] = [
     pros: ["Rapid development", "Highly customizable", "Small bundle sizes", "Great community"],
     cons: ["Learning curve", "HTML bloat", "Different mindset from traditional CSS", "Requires build step"],
     bestFor: "Rapid UI development, custom designs, responsive applications",
-    users: 5000000,
-    rating: 4.8,
     yearFounded: 2017,
   },
   {
@@ -477,8 +419,6 @@ export const tools: Tool[] = [
     pros: ["Easy to learn", "Great documentation", "Pre-built components", "Large community"],
     cons: ["Generic look", "Larger bundle sizes", "Less customizable than Tailwind", "Opinionated"],
     bestFor: "Rapid prototyping, beginners, projects needing quick UI setup",
-    users: 10000000,
-    rating: 4.5,
     yearFounded: 2011,
   },
   {
@@ -493,8 +433,6 @@ export const tools: Tool[] = [
     pros: ["Easy to set up", "Great documentation", "Fast", "Comprehensive"],
     cons: ["Can be slow for large test suites", "Snapshot testing can be problematic", "Memory intensive"],
     bestFor: "JavaScript/React testing, unit tests, integration tests",
-    users: 5000000,
-    rating: 4.8,
     yearFounded: 2014,
   },
   {
@@ -509,8 +447,6 @@ export const tools: Tool[] = [
     pros: ["Very fast", "Jest compatible", "Great developer experience", "Modern tooling"],
     cons: ["Newer, smaller community", "Less documentation than Jest", "Fewer plugins"],
     bestFor: "Modern JavaScript projects, Vite-based applications, performance-critical testing",
-    users: 1000000,
-    rating: 4.8,
     yearFounded: 2021,
   },
   {
@@ -525,8 +461,6 @@ export const tools: Tool[] = [
     pros: ["Integrated with GitHub", "Free tier generous", "Easy to set up", "Great community"],
     cons: ["Limited to GitHub", "Can be expensive at scale", "Slower than some alternatives"],
     bestFor: "GitHub projects, open source, continuous integration and deployment",
-    users: 10000000,
-    rating: 4.7,
     yearFounded: 2019,
   },
   {
@@ -541,8 +475,6 @@ export const tools: Tool[] = [
     pros: ["Fast builds", "Great documentation", "Powerful workflows", "Good free tier"],
     cons: ["Can be expensive", "Smaller community than GitHub Actions", "Setup complexity"],
     bestFor: "Complex CI/CD pipelines, enterprise projects, multi-repository workflows",
-    users: 2000000,
-    rating: 4.6,
     yearFounded: 2011,
   },
   {
@@ -557,8 +489,6 @@ export const tools: Tool[] = [
     pros: ["Excellent for Next.js", "Great performance", "Easy deployment", "Good free tier"],
     cons: ["Vendor lock-in", "Can be expensive", "Limited backend capabilities"],
     bestFor: "Next.js applications, frontend projects, serverless functions",
-    users: 2000000,
-    rating: 4.8,
     yearFounded: 2015,
   },
   {
@@ -573,8 +503,6 @@ export const tools: Tool[] = [
     pros: ["Easy to use", "Great for static sites", "Good free tier", "Excellent documentation"],
     cons: ["Can be expensive", "Limited backend capabilities", "Smaller ecosystem than Vercel"],
     bestFor: "Static sites, JAMstack applications, serverless functions",
-    users: 1000000,
-    rating: 4.7,
     yearFounded: 2014,
   },
   {
@@ -589,8 +517,6 @@ export const tools: Tool[] = [
     pros: ["Most comprehensive", "Largest market share", "Excellent documentation", "Enterprise support"],
     cons: ["Steep learning curve", "Complex pricing", "Overkill for small projects", "Steep learning curve"],
     bestFor: "Enterprise applications, complex architectures, large-scale projects",
-    users: 10000000,
-    rating: 4.7,
     yearFounded: 2006,
   },
 ];

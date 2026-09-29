@@ -80,20 +80,6 @@ export default function ComparisonPage() {
                   <span className="text-sm font-semibold text-slate-500">CATEGORY</span>
                   <p className="text-lg font-semibold text-slate-900">{tool.category}</p>
                 </div>
-                {tool.users && (
-                  <div>
-                    <span className="text-sm font-semibold text-slate-500">USERS</span>
-                    <p className="text-lg font-semibold text-slate-900">
-                      {(tool.users / 1000000).toFixed(1)}M+
-                    </p>
-                  </div>
-                )}
-                {tool.rating && (
-                  <div>
-                    <span className="text-sm font-semibold text-slate-500">RATING</span>
-                    <p className="text-lg font-semibold text-slate-900">{tool.rating}/5.0</p>
-                  </div>
-                )}
               </div>
 
               <div className="space-y-3">
